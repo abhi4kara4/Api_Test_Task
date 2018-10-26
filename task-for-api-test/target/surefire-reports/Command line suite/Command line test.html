@@ -1,0 +1,3200 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>613/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 26 12:47:47 EDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>21 seconds (21984 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyStatusCodeForGetAllPlanetApi()'><b>testToVerifyStatusCodeForGetAllPlanetApi</b><br>Test class: com.api.task.tests.PlanetApiTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Response status code is not 200, instead 404 for API : https://swapi.co/api/planets expected [true] but found [false]
+	at com.api.task.tests.PlanetApiTest.testToVerifyStatusCodeForGetAllPlanetApi(PlanetApiTest.java:58)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2095373876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2095373876'><pre>java.lang.AssertionError: The following asserts failed:
+	Response status code is not 200, instead 404 for API : https://swapi.co/api/planets expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.api.task.tests.PlanetApiTest.testToVerifyStatusCodeForGetAllPlanetApi(PlanetApiTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyApiResponseTimeForGetAllPlanetApi()'><b>testToVerifyApiResponseTimeForGetAllPlanetApi</b><br>Test class: com.api.task.tests.PlanetApiTest</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/2/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/3/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/4/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/5/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/6/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/7/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/8/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/9/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/10/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/11/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/12/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/13/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/14/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/15/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/16/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/17/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/18/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/19/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/20/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/21/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/22/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/23/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/24/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/25/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/26/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/27/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/28/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/29/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/30/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/31/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/32/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/33/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/34/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/35/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/36/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/37/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/38/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/39/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/40/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/41/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/42/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/43/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/44/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/45/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/46/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/47/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/48/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/49/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/50/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/51/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/52/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/53/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/54/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/55/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/56/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/57/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/58/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/59/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/60/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/1/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyApiResponseTimeForUrlById()'><b>testToVerifyApiResponseTimeForUrlById</b><br>Test class: com.api.task.tests.PlanetApiByIdTest<br>Parameters: https://swapi.co/api/planets/61/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Alderaan</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Yavin IV</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Hoth</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dagobah</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bespin</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Endor</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Naboo</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Coruscant</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kamino</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Geonosis</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Utapau</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mustafar</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kashyyyk</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Polis Massa</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mygeeto</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Felucia</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cato Neimoidia</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Saleucami</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Stewjon</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Eriadu</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Corellia</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Rodia</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Nal Hutta</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dantooine</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bestine IV</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ord Mantell</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Trandosha</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Socorro</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mon Cala</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Chandrila</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Sullust</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Toydaria</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Malastare</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dathomir</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ryloth</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Aleen Minor</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Vulpter</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Troiken</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tund</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Haruun Kal</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cerea</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Glee Anselm</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iridonia</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tholoth</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iktotch</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Quermia</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dorin</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Champala</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mirial</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Serenno</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Concord Dawn</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Zolan</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ojom</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Skako</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Muunilinst</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Shili</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kalee</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Umbara</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tatooine</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameInApiResponse()'><b>testToVerifyPlanetNameInApiResponse</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Jakku</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Alderaan, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Yavin IV, temperate, tropical</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Hoth, frozen</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dagobah, murky</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bespin, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Endor, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Naboo, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Coruscant, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kamino, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Geonosis, temperate, arid</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Utapau, temperate, arid, windy</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mustafar, hot</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kashyyyk, tropical</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Polis Massa, artificial temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mygeeto, frigid</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Felucia, hot, humid</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cato Neimoidia, temperate, moist</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Saleucami, hot</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Stewjon, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Eriadu, polluted</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Corellia, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Rodia, hot</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Nal Hutta, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dantooine, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bestine IV, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ord Mantell, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: unknown, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Trandosha, arid</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Socorro, arid</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mon Cala, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Chandrila, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Sullust, superheated</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Toydaria, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Malastare, arid, temperate, tropical</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dathomir, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ryloth, temperate, arid, subartic</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Aleen Minor, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Vulpter, temperate, artic</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Troiken, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tund, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Haruun Kal, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cerea, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Glee Anselm, tropical, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iridonia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tholoth, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iktotch, arid, rocky, windy</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Quermia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dorin, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Champala, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mirial, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Serenno, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Concord Dawn, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Zolan, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ojom, frigid</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Skako, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Muunilinst, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Shili, temperate</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kalee, arid, temperate, tropical</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Umbara, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tatooine, arid</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToClimate()'><b>testToVerifyPlanetNameToClimate</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Jakku, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Alderaan, 12500</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Yavin IV, 10200</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Hoth, 7200</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dagobah, 8900</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bespin, 118000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Endor, 4900</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Naboo, 12120</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Coruscant, 12240</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kamino, 19720</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Geonosis, 11370</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Utapau, 12900</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mustafar, 4200</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kashyyyk, 12765</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Polis Massa, 0</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mygeeto, 10088</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Felucia, 9100</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cato Neimoidia, 0</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Saleucami, 14920</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Stewjon, 0</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Eriadu, 13490</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Corellia, 11000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Rodia, 7549</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Nal Hutta, 12150</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dantooine, 9830</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bestine IV, 6400</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ord Mantell, 14050</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: unknown, 0</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Trandosha, 0</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Socorro, 0</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mon Cala, 11030</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Chandrila, 13500</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Sullust, 12780</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Toydaria, 7900</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Malastare, 18880</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dathomir, 10480</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ryloth, 10600</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Aleen Minor, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Vulpter, 14900</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Troiken, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tund, 12190</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Haruun Kal, 10120</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cerea, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Glee Anselm, 15600</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iridonia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tholoth, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iktotch, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Quermia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dorin, 13400</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Champala, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mirial, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Serenno, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Concord Dawn, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Zolan, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ojom, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Skako, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Muunilinst, 13800</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Shili, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kalee, 13850</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Umbara, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tatooine, 10465</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToDiameter()'><b>testToVerifyPlanetNameToDiameter</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Jakku, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Alderaan, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Yavin IV, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Hoth, 1.1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dagobah, N/A</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bespin, 1.5 (surface), 1 standard (Cloud City)</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Endor, 0.85 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Naboo, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Coruscant, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kamino, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Geonosis, 0.9 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Utapau, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mustafar, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kashyyyk, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Polis Massa, 0.56 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mygeeto, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Felucia, 0.75 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cato Neimoidia, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Saleucami, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Stewjon, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Eriadu, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Corellia, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Rodia, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Nal Hutta, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dantooine, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bestine IV, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ord Mantell, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: unknown, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Trandosha, 0.62 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Socorro, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mon Cala, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Chandrila, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Sullust, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Toydaria, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Malastare, 1.56</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dathomir, 0.9</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ryloth, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Aleen Minor, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Vulpter, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Troiken, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tund, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Haruun Kal, 0.98</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cerea, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Glee Anselm, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iridonia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tholoth, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iktotch, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Quermia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dorin, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Champala, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mirial, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Serenno, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Concord Dawn, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Zolan, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ojom, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Skako, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Muunilinst, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Shili, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kalee, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Umbara, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tatooine, 1 standard</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToGravity()'><b>testToVerifyPlanetNameToGravity</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Jakku, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Alderaan, 2000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Yavin IV, 1000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Hoth, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dagobah, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bespin, 6000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Endor, 30000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Naboo, 4500000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Coruscant, 1000000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kamino, 1000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Geonosis, 100000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Utapau, 95000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mustafar, 20000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kashyyyk, 45000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Polis Massa, 1000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mygeeto, 19000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Felucia, 8500000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cato Neimoidia, 10000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Saleucami, 1400000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Stewjon, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Eriadu, 22000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Corellia, 3000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Rodia, 1300000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Nal Hutta, 7000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dantooine, 1000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bestine IV, 62000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ord Mantell, 4000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: unknown, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Trandosha, 42000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Socorro, 300000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mon Cala, 27000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Chandrila, 1200000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Sullust, 18500000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Toydaria, 11000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Malastare, 2000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dathomir, 5200</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ryloth, 1500000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Aleen Minor, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Vulpter, 421000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Troiken, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tund, 0</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Haruun Kal, 705300</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cerea, 450000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Glee Anselm, 500000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iridonia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tholoth, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iktotch, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Quermia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dorin, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Champala, 3500000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mirial, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Serenno, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Concord Dawn, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Zolan, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ojom, 500000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Skako, 500000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Muunilinst, 5000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Shili, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kalee, 4000000000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Umbara, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tatooine, 200000</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToPopulation()'><b>testToVerifyPlanetNameToPopulation</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Jakku, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Alderaan, 24</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Yavin IV, 24</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Hoth, 23</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dagobah, 23</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bespin, 12</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Endor, 18</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Naboo, 26</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Coruscant, 24</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kamino, 27</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Geonosis, 30</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Utapau, 27</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mustafar, 36</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kashyyyk, 26</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Polis Massa, 24</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mygeeto, 12</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Felucia, 34</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cato Neimoidia, 25</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Saleucami, 26</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Stewjon, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Eriadu, 24</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Corellia, 25</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Rodia, 29</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Nal Hutta, 87</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dantooine, 25</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bestine IV, 26</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ord Mantell, 26</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: unknown, 0</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Trandosha, 25</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Socorro, 20</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mon Cala, 21</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Chandrila, 20</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Sullust, 20</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Toydaria, 21</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Malastare, 26</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dathomir, 24</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ryloth, 30</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Aleen Minor, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Vulpter, 22</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Troiken, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tund, 48</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Haruun Kal, 25</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cerea, 27</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Glee Anselm, 33</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iridonia, 29</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tholoth, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iktotch, 22</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Quermia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dorin, 22</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Champala, 27</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mirial, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Serenno, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Concord Dawn, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Zolan, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ojom, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Skako, 27</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Muunilinst, 28</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Shili, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kalee, 23</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Umbara, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tatooine, 23</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToRotationPeriod()'><b>testToVerifyPlanetNameToRotationPeriod</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Jakku, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Alderaan, 40</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Yavin IV, 8</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Hoth, 100</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dagobah, 8</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bespin, 0</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Endor, 8</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Naboo, 12</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Coruscant, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kamino, 100</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Geonosis, 5</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Utapau, 0.9</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mustafar, 0</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kashyyyk, 60</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Polis Massa, 0</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mygeeto, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Felucia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cato Neimoidia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Saleucami, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Stewjon, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Eriadu, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Corellia, 70</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Rodia, 60</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Nal Hutta, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dantooine, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bestine IV, 98</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ord Mantell, 10</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: unknown, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Trandosha, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Socorro, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mon Cala, 100</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Chandrila, 40</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Sullust, 5</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Toydaria, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Malastare, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dathomir, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ryloth, 5</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Aleen Minor, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Vulpter, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Troiken, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tund, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Haruun Kal, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cerea, 20</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Glee Anselm, 80</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iridonia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tholoth, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iktotch, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Quermia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dorin, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Champala, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mirial, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Serenno, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Concord Dawn, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Zolan, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ojom, 100</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Skako, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Muunilinst, 25</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Shili, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kalee, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Umbara, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tatooine, 1</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToSurfaceWater()'><b>testToVerifyPlanetNameToSurfaceWater</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Jakku, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Alderaan, grasslands, mountains</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Yavin IV, jungle, rainforests</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Hoth, tundra, ice caves, mountain ranges</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dagobah, swamp, jungles</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bespin, gas giant</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Endor, forests, mountains, lakes</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Naboo, grassy hills, swamps, forests, mountains</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Coruscant, cityscape, mountains</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kamino, ocean</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Geonosis, rock, desert, mountain, barren</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Utapau, scrublands, savanna, canyons, sinkholes</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mustafar, volcanoes, lava rivers, mountains, caves</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kashyyyk, jungle, forests, lakes, rivers</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Polis Massa, airless asteroid</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mygeeto, glaciers, mountains, ice canyons</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Felucia, fungus forests</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cato Neimoidia, mountains, fields, forests, rock arches</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Saleucami, caves, desert, mountains, volcanoes</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Stewjon, grass</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Eriadu, cityscape</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Corellia, plains, urban, hills, forests</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Rodia, jungles, oceans, urban, swamps</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Nal Hutta, urban, oceans, swamps, bogs</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dantooine, oceans, savannas, mountains, grasslands</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bestine IV, rocky islands, oceans</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ord Mantell, plains, seas, mesas</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: unknown, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Trandosha, mountains, seas, grasslands, deserts</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Socorro, deserts, mountains</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mon Cala, oceans, reefs, islands</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Chandrila, plains, forests</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Sullust, mountains, volcanoes, rocky deserts</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Toydaria, swamps, lakes</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Malastare, swamps, deserts, jungles, mountains</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dathomir, forests, deserts, savannas</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ryloth, mountains, valleys, deserts, tundra</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Aleen Minor, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Vulpter, urban, barren</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Troiken, desert, tundra, rainforests, mountains</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tund, barren, ash</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Haruun Kal, toxic cloudsea, plateaus, volcanoes</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cerea, verdant</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Glee Anselm, lakes, islands, swamps, seas</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iridonia, rocky canyons, acid pools</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tholoth, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iktotch, rocky</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Quermia, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dorin, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Champala, oceans, rainforests, plateaus</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mirial, deserts</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Serenno, rainforests, rivers, mountains</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Concord Dawn, jungles, forests, deserts</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Zolan, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ojom, oceans, glaciers</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Skako, urban, vines</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Muunilinst, plains, forests, hills, mountains</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Shili, cities, savannahs, seas, plains</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kalee, rainforests, cliffs, canyons, seas</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Umbara, unknown</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tatooine, desert</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToTerrain()'><b>testToVerifyPlanetNameToTerrain</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Jakku, deserts</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Alderaan, https://swapi.co/api/planets/2/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Yavin IV, https://swapi.co/api/planets/3/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Hoth, https://swapi.co/api/planets/4/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dagobah, https://swapi.co/api/planets/5/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bespin, https://swapi.co/api/planets/6/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Endor, https://swapi.co/api/planets/7/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Naboo, https://swapi.co/api/planets/8/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Coruscant, https://swapi.co/api/planets/9/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kamino, https://swapi.co/api/planets/10/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Geonosis, https://swapi.co/api/planets/11/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Utapau, https://swapi.co/api/planets/12/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mustafar, https://swapi.co/api/planets/13/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kashyyyk, https://swapi.co/api/planets/14/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Polis Massa, https://swapi.co/api/planets/15/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mygeeto, https://swapi.co/api/planets/16/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Felucia, https://swapi.co/api/planets/17/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cato Neimoidia, https://swapi.co/api/planets/18/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Saleucami, https://swapi.co/api/planets/19/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Stewjon, https://swapi.co/api/planets/20/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Eriadu, https://swapi.co/api/planets/21/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Corellia, https://swapi.co/api/planets/22/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Rodia, https://swapi.co/api/planets/23/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Nal Hutta, https://swapi.co/api/planets/24/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dantooine, https://swapi.co/api/planets/25/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Bestine IV, https://swapi.co/api/planets/26/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ord Mantell, https://swapi.co/api/planets/27/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: unknown, https://swapi.co/api/planets/28/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Trandosha, https://swapi.co/api/planets/29/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Socorro, https://swapi.co/api/planets/30/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mon Cala, https://swapi.co/api/planets/31/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Chandrila, https://swapi.co/api/planets/32/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Sullust, https://swapi.co/api/planets/33/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Toydaria, https://swapi.co/api/planets/34/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Malastare, https://swapi.co/api/planets/35/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dathomir, https://swapi.co/api/planets/36/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ryloth, https://swapi.co/api/planets/37/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Aleen Minor, https://swapi.co/api/planets/38/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Vulpter, https://swapi.co/api/planets/39/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Troiken, https://swapi.co/api/planets/40/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tund, https://swapi.co/api/planets/41/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Haruun Kal, https://swapi.co/api/planets/42/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Cerea, https://swapi.co/api/planets/43/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Glee Anselm, https://swapi.co/api/planets/44/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iridonia, https://swapi.co/api/planets/45/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tholoth, https://swapi.co/api/planets/46/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Iktotch, https://swapi.co/api/planets/47/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Quermia, https://swapi.co/api/planets/48/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Dorin, https://swapi.co/api/planets/49/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Champala, https://swapi.co/api/planets/50/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Mirial, https://swapi.co/api/planets/51/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Serenno, https://swapi.co/api/planets/52/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Concord Dawn, https://swapi.co/api/planets/53/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Zolan, https://swapi.co/api/planets/54/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Ojom, https://swapi.co/api/planets/55/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Skako, https://swapi.co/api/planets/56/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Muunilinst, https://swapi.co/api/planets/57/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Shili, https://swapi.co/api/planets/58/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Kalee, https://swapi.co/api/planets/59/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Umbara, https://swapi.co/api/planets/60/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Tatooine, https://swapi.co/api/planets/1/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyPlanetNameToUrl()'><b>testToVerifyPlanetNameToUrl</b><br>Test class: com.api.task.tests.PlanetApiTest<br>Parameters: Jakku, https://swapi.co/api/planets/61/</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiTest.testToVerifyResponseForInvalidApiUrl()'><b>testToVerifyResponseForInvalidApiUrl</b><br>Test class: com.api.task.tests.PlanetApiTest</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiTest@2096442d</td></tr>
+<tr>
+<td title='com.api.task.tests.PlanetApiByIdTest.testToVerifyResponseForInvalidPlanetId()'><b>testToVerifyResponseForInvalidPlanetId</b><br>Test class: com.api.task.tests.PlanetApiByIdTest</td>
+<td></td>
+<td>0</td>
+<td>com.api.task.tests.PlanetApiByIdTest@9f70c54</td></tr>
+</table><p>
+</body>
+</html>
