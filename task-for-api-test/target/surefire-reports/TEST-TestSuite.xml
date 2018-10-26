@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="614" failures="1" name="TestSuite" time="16.438" errors="0" skipped="0">
+<testsuite tests="614" failures="1" name="TestSuite" time="15.512" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.131-b11"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/akaran001c/Documents/workspace/task-for-api-test"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/akaran001c/github_public/Api_Test_Task/task-for-api-test"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="test" value="PlanetApiByIdTest,PlanetApiTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/akaran001c/Documents/workspace/task-for-api-test"/>
+    <property name="user.dir" value="/Users/akaran001c/github_public/Api_Test_Task/task-for-api-test"/>
     <property name="java.runtime.version" value="1.8.0_131-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -27,7 +27,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/akaran001c/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8920009026051689532.tmp"/>
+    <property name="classworlds.conf" value="/Users/akaran001c/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf6364078815399933130.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/akaran001c/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -53,24 +53,14 @@
     <property name="java.ext.dirs" value="/Users/akaran001c/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/akaran001c/Documents/workspace/task-for-api-test/EMBEDDED"/>
+    <property name="maven.home" value="/Users/akaran001c/github_public/Api_Test_Task/task-for-api-test/EMBEDDED"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyApiResponseTimeForGetAllPlanetApi" time="0.01"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyApiResponseTimeForGetAllPlanetApi" time="0.008"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
@@ -81,32 +71,12 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
@@ -121,7 +91,38 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameInApiResponse" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
@@ -131,19 +132,11 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0.001"/>
@@ -173,7 +166,6 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
@@ -183,6 +175,62 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0.002"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToClimate" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.002"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
@@ -194,58 +242,42 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToDiameter" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
@@ -259,20 +291,8 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
@@ -285,51 +305,9 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToGravity" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
@@ -355,19 +333,39 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0.002"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToPopulation" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
@@ -378,29 +376,6 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
@@ -418,6 +393,18 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
@@ -427,6 +414,21 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToRotationPeriod" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
@@ -440,38 +442,11 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
@@ -488,6 +463,50 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToSurfaceWater" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0.001"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
@@ -498,13 +517,7 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
@@ -527,15 +540,6 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
@@ -543,25 +547,8 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToTerrain" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
@@ -580,7 +567,6 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
@@ -591,9 +577,7 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0.001"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
@@ -607,11 +591,27 @@
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
   <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0.001"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyResponseForInvalidApiUrl" time="0.154"/>
-  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyStatusCodeForGetAllPlanetApi" time="0.003">
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyPlanetNameToUrl" time="0"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyResponseForInvalidApiUrl" time="0.203"/>
+  <testcase classname="com.api.task.tests.PlanetApiTest" name="testToVerifyStatusCodeForGetAllPlanetApi" time="0.006">
     <failure message="The following asserts failed:
 	Response status code is not 200, instead 404 for API : https://swapi.co/api/planets expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	Response status code is not 200, instead 404 for API : https://swapi.co/api/planets expected [true] but found [false]
@@ -621,66 +621,66 @@
     <system-out>Step S1 to validate Status Code on API URLL : https://swapi.co/api/planets
 </system-out>
   </testcase>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.402"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.315"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.206"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.267"/>
   <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.188"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.252"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.228"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.257"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.306"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.202"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.237"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.227"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.195"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.199"/>
   <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.213"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.294"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.205"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.192"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.215"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.493"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.301"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.196"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.247"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.203"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.191"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.342"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.315"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.241"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.212"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.226"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.338"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.248"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.303"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.228"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.249"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.241"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.213"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.264"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.218"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.226"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.298"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.229"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.25"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.254"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.291"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.202"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.276"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.228"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.255"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.273"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.226"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.39"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.263"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.175"/>
   <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.259"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.297"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.235"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.258"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.483"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.215"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.268"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.351"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.299"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.338"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.243"/>
   <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.226"/>
-  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyResponseForInvalidPlanetId" time="0.247"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.191"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.261"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.218"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.255"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.221"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.213"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.178"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.227"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.388"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.243"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.354"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.198"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.293"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.241"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.226"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.198"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.223"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.268"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.226"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.228"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.304"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.301"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.228"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.225"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.212"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.338"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.226"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.203"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.218"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.194"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.228"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.258"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.224"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.29"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.303"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.206"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.232"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.265"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.222"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.238"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.187"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.3"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.216"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.255"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.244"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.26"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.239"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.25"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.234"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.207"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.367"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyApiResponseTimeForUrlById" time="0.257"/>
+  <testcase classname="com.api.task.tests.PlanetApiByIdTest" name="testToVerifyResponseForInvalidPlanetId" time="0.33"/>
 </testsuite>

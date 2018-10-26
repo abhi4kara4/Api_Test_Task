@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 614, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.808 sec <<< FAILURE!
-testToVerifyStatusCodeForGetAllPlanetApi(com.api.task.tests.PlanetApiTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+Tests run: 614, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.669 sec <<< FAILURE!
+testToVerifyStatusCodeForGetAllPlanetApi(com.api.task.tests.PlanetApiTest)  Time elapsed: 0.006 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	Response status code is not 200, instead 404 for API : https://swapi.co/api/planets expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)

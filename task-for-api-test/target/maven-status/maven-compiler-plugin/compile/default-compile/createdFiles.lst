@@ -1,9 +1,6 @@
-com/api/task/enums/TestType.class
-com/api/task/annotations/TestDetails.class
-com/api/task/utilities/CommonUtil.class
-META-INF/maven/com.api.task/task-for-api-test/pom.properties
 com/api/task/initializer/Planet.class
 com/api/task/utilities/ExcelReader.class
+com/api/task/enums/TestType.class
+com/api/task/annotations/TestDetails.class
 com/api/task/constants/Constants.class
-META-INF/maven/com.api.task/task-for-api-test/pom.xml
-META-INF/MANIFEST.MF
+com/api/task/utilities/CommonUtil.class

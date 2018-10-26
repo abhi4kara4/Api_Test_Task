@@ -41,7 +41,7 @@ public class PlanetApiTest {
 			String apiUrl = Constants.PLANET_API_URL;
 			String stepNumber = "S1";
 			String step1des = "Step "+stepNumber+" to validate Status Code on API URLL : "+apiUrl;
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 			boolean isStatusCodeCorrect = false;
 
 			int actualStatusCode = Planet.getInstance(apiUrl).getStatusCode();
@@ -74,7 +74,7 @@ public class PlanetApiTest {
 			String apiUrl = Constants.PLANET_API_URL;
 			String stepNumber = "S1";
 			String step1des = "Step "+stepNumber+" to validate that Response Time is less than 2 Sec. on API URLL : "+apiUrl;
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 			long apiResponseTime = Planet.getInstance(apiUrl).getApiResponseTime();
 
 			boolean isResponseTimeFine = CommonUtil.verifyApiResponseTime(apiResponseTime);
@@ -100,7 +100,7 @@ public class PlanetApiTest {
 			boolean isPlanetPresent = false;
 			String stepNumber = "S1";
 			String step1des = "Step "+stepNumber+" to validate that planet Name : "+planetName+" is present in the response of getAllPlanetApi";
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 
 			Planet planet = Planet.getInstance(Constants.PLANET_API_URL);
 
@@ -131,7 +131,7 @@ public class PlanetApiTest {
 			boolean isRotationPeriodMappedToCorrectPlanetName = false;
 			String stepNumber = "S1";
 			String step1des = "Step "+stepNumber+" to validate rotationPeriod is : "+rotationPeriod+" for PlanetName : "+planetName;
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 
 			String apiUrl = Constants.PLANET_API_URL;
 			Map<String, String> map = Planet.getInstance(apiUrl).getPlanetNameToRotationPeriod();
@@ -161,7 +161,7 @@ public class PlanetApiTest {
 			boolean isDiameterMappedToCorrectPlanetName = false;
 			String stepNumber = "S1";
 			String step1des = "Step "+stepNumber+" to validate diameter is : "+diameter+" for PlanetName : "+planetName;
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 
 			String apiUrl = Constants.PLANET_API_URL;
 			Map<String, String> map = Planet.getInstance(apiUrl).getPlanetNameToDiameter();
@@ -193,7 +193,7 @@ public class PlanetApiTest {
 			boolean isClimateMappedToCorrectPlanetName = false;
 			String stepNumber = "S1";
 			String step1des = "Step "+stepNumber+" to validate climate is : "+climate+" for PlanetName : "+planetName;
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 
 			String apiUrl = Constants.PLANET_API_URL;
 			Map<String, String> map = Planet.getInstance(apiUrl).getPlanetNameToClimate();
@@ -225,7 +225,7 @@ public class PlanetApiTest {
 			boolean isGravityMappedToCorrectPlanetName = false;
 			String stepNumber = "S1";
 			String step1des = "Step "+stepNumber+" to validate terrain is : "+gravity+" for PlanetName : "+planetName;
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 
 			String apiUrl = Constants.PLANET_API_URL;
 			Map<String, String> map = Planet.getInstance(apiUrl).getPlanetNameToGravity();
@@ -258,7 +258,7 @@ public class PlanetApiTest {
 			boolean isTerrainMappedToCorrectPlanetName = false;
 			String stepNumber = "S1";
 			String step1des = "Step "+stepNumber+" to validate terrain is : "+terrain+" for PlanetName : "+planetName;
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 
 			String apiUrl = Constants.PLANET_API_URL;
 			Map<String, String> map = Planet.getInstance(apiUrl).getPlanetNameToTerrain();
@@ -290,7 +290,7 @@ public class PlanetApiTest {
 			boolean isSurfaceWaterMappedToCorrectPlanetName = false;
 			String stepNumber = "S1";
 			String step1des = "Step "+stepNumber+" to validate surfaceWater is : "+surfaceWater+" for PlanetName : "+planetName;
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 
 			String apiUrl = Constants.PLANET_API_URL;
 			Map<String, String> map = Planet.getInstance(apiUrl).getPlanetNameToSurfaceWater();
@@ -323,7 +323,7 @@ public class PlanetApiTest {
 			boolean isPopulationMappedToCorrectPlanetName = false;
 			String stepNumber = "S1";
 			String step1des = "Step "+stepNumber+" to validate population is : "+population+" for PlanetName : "+planetName;
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 			String apiUrl = Constants.PLANET_API_URL;
 			Map<String, String> map = Planet.getInstance(apiUrl).getPlanetNameToPopulation();
 
@@ -355,7 +355,7 @@ public class PlanetApiTest {
 			boolean isUrlMappedToCorrectPlanetName = false;
 			String stepNumber = "S1";
 			String step1des = "Step "+stepNumber+" to validate url is : "+url+" for PlanetName : "+planetName;
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 			String apiUrl = Constants.PLANET_API_URL;
 			Map<String, String> map = Planet.getInstance(apiUrl).getPlanetNameToUrl();
 
@@ -387,7 +387,7 @@ public class PlanetApiTest {
 			String apiUrl = Constants.INVALID_PLANET_API_URL;
 			boolean isStatusCodeCorrect = false;
 			String step1 = "Step "+stepNumber+" to Verify the Response status code for Invalid Planet URL : "+apiUrl;
-			System.out.println(step1);
+			LOGGER.info(step1);
 			
 			//Setting Instance = null if different apiUrl
 			if(!Planet.planetUrl.equals(apiUrl)) {

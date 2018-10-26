@@ -31,13 +31,13 @@ public class PlanetApiByIdTest {
 			if(!Planet.planetUrl.equals(apiUrl)) {
 				Planet.instance = null;
 			}else {
-				System.out.println("Instance already present for the apiUrl "+apiUrl);
+				LOGGER.error("Instance already present for the apiUrl "+apiUrl);
 			}
 
 			
 
 			String step1des = "Step "+stepNumber+" to validate Response Time is less than 2 Sec. on API URLL : "+apiUrl;
-			System.out.println(step1des);
+			LOGGER.info(step1des);
 			long apiResponseTime = Planet.getInstance(apiUrl).getApiResponseTime();
 			boolean isResponseTimeFine = CommonUtil.verifyApiResponseTime(apiResponseTime);
 
@@ -48,7 +48,7 @@ public class PlanetApiByIdTest {
 			stepNumber = "S2";
 			String step2des = "Step "+stepNumber+" to validate Status Code on API URL : "+apiUrl;
 			boolean isStatusCodeCorrect = false;
-			System.out.println(step2des);
+			LOGGER.info(step2des);
 
 			int actualStatusCode = Planet.getInstance(apiUrl).getStatusCode();
 			
@@ -80,13 +80,13 @@ public class PlanetApiByIdTest {
 			boolean isResponseBodyCorrect = false;
 			String responseBody = "";
 			String step1 = "Step "+stepNumber+" to Validate if Response Body contains \"detail\": \"Not found\" when Planet Id is invalid for API";
-			System.out.println(step1);
+			LOGGER.info(step1);
 
 			//Setting Instance = null if different apiUrl
 			if(!Planet.planetUrl.equals(apiUrl)) {
 				Planet.instance = null;
 			}else {
-				System.out.println("Instance already present for the apiUrl "+apiUrl);
+				LOGGER.error("Instance already present for the apiUrl "+apiUrl);
 			}
 
 			response = Planet.getInstance(apiUrl).getApiResponse();
@@ -103,7 +103,7 @@ public class PlanetApiByIdTest {
 			String step2 = "Step "+stepNumber+" to Validate if Response Status Code is "+Constants.NOT_FOUND_STATUS_CODE+" when Planet Id is invalid for API";
 			int statusCode = response.getStatusCode();
 			boolean isStatusCodeCorrect = false;
-			System.out.println(step2);
+			LOGGER.info(step2);
 
 			if(statusCode==Constants.NOT_FOUND_STATUS_CODE) {
 				isStatusCodeCorrect = true;
