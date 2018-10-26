@@ -21,7 +21,7 @@ public class PlanetApiByIdTest {
 	// clean install -Dtest=PlanetApiByIdTest,PlanetApiTest test
 
 	@Test(dataProvider="apiUrls", dataProviderClass = ProvideData.class)
-	@TestDetails(testUID = "TC-API_TEST-15", testType = { TestType.FUNCTIONAL}, tags = { "API_TEST" }, testDecription = "Test to valiadate the Planet API url by ID")
+	@TestDetails(testUID = "TC-API_TEST-13", testType = { TestType.FUNCTIONAL}, tags = { "API_TEST" }, testDecription = "Test to valiadate the Planet API url by ID")
 	public void testToVerifyApiResponseTimeForUrlById(String apiUrl) {
 		//Initializing the softAssert inorder to continue execution even after assert fail
 		SoftAssert softAssert = new SoftAssert();
@@ -69,7 +69,7 @@ public class PlanetApiByIdTest {
 
 
 	@Test
-	@TestDetails(testUID = "TC-API_TEST-16", testType = { TestType.FUNCTIONAL}, tags = { "API_TEST" }, testDecription = "Test to valiadate the API when planetId is Invalid")
+	@TestDetails(testUID = "TC-API_TEST-14", testType = { TestType.FUNCTIONAL}, tags = { "API_TEST" }, testDecription = "Test to valiadate the API when planetId is Invalid")
 	public void testToVerifyResponseForInvalidPlanetId() {
 		//Initializing the softAssert inorder to continue execution even after assert fail
 		SoftAssert softAssert = new SoftAssert();
